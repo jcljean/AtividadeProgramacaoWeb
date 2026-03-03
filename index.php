@@ -47,7 +47,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 - Desenvolvido por - Jean Carlos Livero</p>
+        <p>&copy; <?php echo date('Y'); ?> - Desenvolvido por - Jean Carlos Livero</p>
     </footer>
 </body>
 </html>
