@@ -7,6 +7,10 @@ body{
     background-color: #4f4c4c;
     font-family:  'Courier New', Courier, monospace;
     color: #333333;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header{
@@ -27,6 +31,7 @@ nav{
 nav ul{
     display: flex;
     justify-content: center;
+    gap: 30px;
 }
 
 nav ul li{
@@ -47,10 +52,16 @@ nav ul li a:hover{
 /* conteúdo principal */
 
 main{
+    display: flex;
+    flex-wrap: wrap; /* Espalha os cards no espaço disponível */
+    gap: 20px; /* Joga o card para linha de baixo caso a tela encolha */
+    padding: 20px;
     max-width: 800px;
     margin: 20px auto;
     text-align: justify;
     background-color: #F5F5DC;
+    flex: 1; /* O main crece para ocupar o espaço disponível entre o header e o footer */
+    align-content: flex-start;/* Agrupa as linhas de cards no topo do main*/
 }
 
 img{
@@ -63,6 +74,12 @@ img{
 
 
 article{
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0,0.1); 
     margin-bottom: 20px;
 }
 
